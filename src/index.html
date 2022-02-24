@@ -4,13 +4,52 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tailwind Starter Template</title>
+    <title>Musikloftet - Homepage</title>
     <link rel="stylesheet" href="tailwind.css" />
   </head>
 
   <body>
-    <main grid-cols-12><</main>
-    <button class="btn btn-primary">Hello</button>
+    <main>
+      <section class="col-start-1 col-end-13 grid">
+        <img alt="" src="/img/Homepage-image-1.jpg" class="w-100%" />
+        <img
+          alt=""
+          src="/img/down-arrow.svg"
+          class="absolute top-3/4 left-10 transition-transform hover:scale-150"
+        />
+      </section>
+      <section class="">
+        <h1 class="object-none object-center">MUSIKLOFTET</h1>
+      </section>
+
+      <section>
+        <div class="grid grid-cols-3 items-center justify-center">
+          <div class="">
+            <img src="/img/plantegning.svg" alt="" />
+          </div>
+          <div class="grid grid-cols-1 gap-3">
+            <button
+              class="btn btn-circle outline-black-1 k h-20 w-20 border-none bg-white text-black outline transition-transform hover:bg-black hover:text-white"
+            >
+              Lille
+            </button>
+            <button
+              class="btn btn-circle hover:bg-accent hover:outline-accent outline-black-1 h-20 w-20 border-none bg-white text-black outline transition-transform hover:text-black"
+            >
+              mellem
+            </button>
+            <button
+              class="btn btn-circle hover:bg-primary-focus outline-black-1 hover:outline-primary-focus h-20 w-20 border-none bg-white text-black outline transition-transform hover:text-white"
+            >
+              stor
+            </button>
+          </div>
+          <div>
+            <img alt="" src="/img/Calendar empty.svg" />
+          </div>
+        </div>
+      </section>
+    </main>
     <script type="module" src="index.js"></script>
   </body>
 </html>
